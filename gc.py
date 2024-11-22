@@ -10,7 +10,7 @@ fasta = read_input('./rosalind_data/rosalind_gc.txt')
 sequences = {}
 current_id = ""
 for line in fasta:
-    if line[0] == ">":
+    if line[0] == ">": # could also be: if line.startswith(">"):
         header = line
         # this is a header
         # we only care about this header from now on
