@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 
+from util import read_input
+line_list = read_input("./rosalind_data/rosalind_prot.txt")
+rna = line_list[0]
 # translate an RNA sequence into protein
 
 # create a reference dictionary with the genetic code
@@ -22,6 +25,13 @@ code = {
 "UGG": "W",      "CGG": "R",      "AGG": "R",      "GGG": "G" 
 }
 # read the RNA in triplets
+peptide = ""
+for start in range(0, len(rna), 3):
+    codon = rna[start:start+3]
+    aminoacid = code[codon] # map every triplet to aminoacid
+    if aminoacid == "Stop":
+        break
+    peptide += aminoacid
 
-# map every triplet to aminoacid
+print(peptide)
 
