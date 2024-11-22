@@ -21,3 +21,16 @@ def complement(x):
         return "G"
     else:
         return None
+    
+#calculate gc content for a dna, returns id and gc content as a dictionary
+def calculate_gc_content(dna):
+    counts = {
+     'A': 0,
+     'T': 0,
+     'C': 0,
+     'G': 0,
+ }
+    for base in dna:
+         counts[base] += 1
+         gc = (counts['G'] + counts['C']) / len(dna) * 100
+         return gc

@@ -61,4 +61,5 @@ for seq_id, current_gc_value in gc_values.items():
          max_id = seq_id
      #print(f"update: current max value: {max_value} current max id: {max_id}")
      #print("================")
-print (max_id, max_value)
+print (max_id)
+print ( max_value)
