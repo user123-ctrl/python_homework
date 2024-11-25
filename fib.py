@@ -12,7 +12,7 @@ rabbits = [1, 1]  # Month 1 and Month 2 both start with 1 pair
 
 # Step 2: Loop through months 3 to n
 for month in range(3, n + 1):
-    # New total = rabbits from last month + (rabbits from 2 months ago * k)
+    # New total = rabbits alive last month + (rabbits alive 2 months ago * k)
     new_rabbits = rabbits[-1] + (rabbits[-2] * k)
     rabbits.append(new_rabbits)  # Add the new month's total to the list
 
