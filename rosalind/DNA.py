@@ -7,7 +7,7 @@ numberof_G = 0
 numberof_T = 0
 
 for letter in s:
-    if letter == "A":
+        if letter == "A":
         numberof_A = numberof_A + 1
     if letter == "C":
         numberof_C = numberof_C + 1
