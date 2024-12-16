@@ -38,3 +38,8 @@ palindromes = find_palindrom(dna, reversed_complement)
 for base, length in palindromes:
     print(base, length)
 
+# def main():
+
+#     if __name__ == '__main__':
+#         main()
+# works without this originally
